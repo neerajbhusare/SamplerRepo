@@ -1,6 +1,5 @@
 package helloworld;
 
-import org.eclipse.swt.graphics.Point;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -18,7 +17,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     
     public void preWindowOpen() {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
-        configurer.setInitialSize(new Point(900, 1000));
+        configurer.getWindow().getShell().setMaximized(true);
         configurer.setShowCoolBar(true);
         configurer.setShowStatusLine(true);
         configurer.setTitle("Hello World RCP (Temenos)"); //$NON-NLS-1$
