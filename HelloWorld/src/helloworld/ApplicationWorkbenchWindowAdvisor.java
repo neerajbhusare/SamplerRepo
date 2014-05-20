@@ -19,7 +19,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
         configurer.getWindow().getShell().setMaximized(true);
         configurer.setShowCoolBar(true);
-        configurer.setShowStatusLine(true);
-        configurer.setTitle("Hello World RCP (Temenos)"); //$NON-NLS-1$
+        configurer.setShowStatusLine(false);
+        configurer.setTitle("Hello World RCP (Temenos 123)"); //$NON-NLS-1$
     }
 }
